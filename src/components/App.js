@@ -16,8 +16,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      account: '',
-      contract: '',
+      account: null,
+      contract: null,
       buffer: null,
       memeHash: ''
     }
