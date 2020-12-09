@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
 import './App.css';
+import Web3 from 'web3';
 
 const ipfsClient = require('ipfs-http-client');
 const ipfs = ipfsClient({ host: 'ipfs.infura.io', port: '5001', protocol: 'https' })
@@ -52,6 +52,11 @@ class App extends Component {
           >
             Meme of the day
           </a>
+          <ul className="navbar-nav px-3">
+            <li className="nav-item nav-nowrap d-done d-sm-none d-sm-block">
+              <small className="text-white">{this.state.account}</small>
+            </li>
+          </ul>
         </nav>
         <div className="container-fluid mt-5">
           <div className="row">
